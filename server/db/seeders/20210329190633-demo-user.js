@@ -8,8 +8,9 @@ module.exports = {
       email: 'gio@gio.com',
       role: 'hall',
       createdAt: new Date(),
-      updatedAt: new Date()
-    }]);
+      updatedAt: new Date(),
+    },
+  ]);
   },
 
   down: async (queryInterface, Sequelize) => {
