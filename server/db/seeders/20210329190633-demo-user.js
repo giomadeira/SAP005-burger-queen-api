@@ -9,8 +9,9 @@ module.exports = {
       role: 'hall',
       password: 'blablos',
       createdAt: new Date(),
-      updatedAt: new Date()
-    }]);
+      updatedAt: new Date(),
+    },
+  ]);
   },
 
   down: async (queryInterface, Sequelize) => {
