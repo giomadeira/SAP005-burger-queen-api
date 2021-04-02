@@ -4,6 +4,6 @@ const OrdersController = require('../controller/OrdersController')
 const router = Router()
 
 // aqui vai as requisições
-router.get("/", OrdersController.getAllExamples)
+router.get("/", OrdersController.getAllOrders)
 
 module.exports = router
