@@ -4,6 +4,7 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Orders extends Model {
+
     
     static associate(models) {
       
@@ -14,7 +15,15 @@ module.exports = (sequelize, DataTypes) => {
   };
   Orders.init({
     clienteName: DataTypes.STRING,
-    userId: DataTypes.INTEGER,
+
+   
+    static associate(models) {
+      
+    }
+  };
+  Orders.init({
+    client_name: DataTypes.STRING,
+    user_id: DataTypes.INTEGER,
     table: DataTypes.INTEGER,
     status: DataTypes.STRING
   }, {
